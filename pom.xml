@@ -4,7 +4,7 @@
 
   <groupId>xindanwei</groupId>
   <artifactId>xindanwei01</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>xindanwei01</name>
@@ -33,4 +33,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+	<repository>
+		<id>nexus-releases</id>
+		<name>nexus release repository</name>
+		<url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
+	</repository>
+	<snapshotRepository>
+		<id>nexus-snapshots</id>
+		<name>nexus snapshot repository</name>
+		<url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url>
+	</snapshotRepository>
+  </distributionManagement>
 </project>
